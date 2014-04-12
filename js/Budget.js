@@ -21,7 +21,7 @@ define(['Messages', 'MiscUtils'],
     this.policeEffect = this.MAX_POLICESTATION_EFFECT;
     this.fireEffect = this.MAX_FIRESTATION_EFFECT;
     this.totalFunds = 0;
-    this.cityTax = 7;
+    this.cityTax = 0;
     this.cashFlow = 0;
     this.taxFund = 0;
 

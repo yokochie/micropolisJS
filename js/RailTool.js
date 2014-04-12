@@ -12,7 +12,7 @@ define(['BaseTool', 'Connector', 'Tile', 'TileUtils'],
   "use strict";
 
   function RailTool(map) {
-    this.init(20, map, true, true);
+    this.init(30000000, map, true, true);
   }
 
 
@@ -94,7 +94,7 @@ define(['BaseTool', 'Connector', 'Tile', 'TileUtils'],
           this._worldEffects.setTile(x, y, Tile.HRAILROAD, Tile.BURNBIT | Tile.BULLBIT);
           break;
 
-        default: 
+        default:
           return this.TOOLRESULT_FAILED;
       }
 

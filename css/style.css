@@ -1,6 +1,7 @@
 body {
-  background-color: skyblue;
+  background-color: rgb(145, 69, 10);
   font-family: sans-serif;
+  background-image: url(../images/bg.jpg);
 }
 
 h1 a {
@@ -25,13 +26,14 @@ a:hover {
 }
 
 .canvasWidth {
-  width: 600px;
+  width: 100%;
   margin: auto;
 }
 
 .splashWidth {
-  width: 400px;
-  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .clr {
@@ -74,9 +76,13 @@ a:hover {
   display: table-cell;
 }
 
-.links {
-  float: right;
+h1#title{
+	margin:40px auto 0;
 }
+
+.links {
+  float: none;
+  }
 
 .awaitGeneration, .hidden {
   display: none;
@@ -126,10 +132,14 @@ a:hover {
 }
 
 .splashButton {
-  width: 100px;
-  margin: auto;
-  border: none;
   cursor: pointer;
+  	color: #fff;
+	text-decoration: none;
+	border-left: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	border-right: 2px solid #444;
+	border-bottom: 2px solid #444;
+
 }
 
 .selected {
@@ -257,7 +267,9 @@ a:hover {
 }
 
 #infobar {
-  background-color: silver;
+  background-color: #fff;
+  padding: 10px;
+  border: 6px double #000;
 }
 
 #miscControls {
@@ -281,6 +293,7 @@ a:hover {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
+  padding: 5px;
 }
 
 #opaque {
@@ -309,15 +322,16 @@ a:hover {
 }
 
 #canvasContainer {
-  width: 600px;
-  height: 400px;
+  width: 350px;
+  height: 300px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  
 }
 
 #container {
-  width: 60%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -331,22 +345,43 @@ a:hover {
 }
 
 #splashGenerate {
-  background-color: dodgerBlue;
-  color: white
+	background: #a3a3a3;
+	color: #000;
 }
 
 #splashPlay {
-  background-color: lightgreen;
+	background: #a3a3a3;
+	color: #000;
 }
 
 #splashButtons {
   width: 250px;
   margin: auto;
+  margin: 10px auto;
+}
+
+#splashButton {
+font-weight: bold;
 }
 
 #difficulties {
   margin-top: 10px;
+  background: white;
+  width: 60%;
+  border: none;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 12px;
+  border: 6px double;
 }
+
+#difficulties legend{
+	background: white;
+	padding: 5px 20px;
+	font-weight: bold;
+  border: 6px double;
+}
+
 
 #RCIContainer {
   width: 140px;
@@ -359,4 +394,18 @@ a:hover {
 
 #toolInfo {
   text-align: center;
+}
+
+
+a.link_button{
+	padding: 5px;
+	background: #a3a3a3;
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	border-left: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	border-right: 2px solid #444;
+	border-bottom: 2px solid #444;
 }

@@ -568,7 +568,7 @@ define(['AnimationManager', 'GameMap', 'MouseBox', 'Tile', 'TileSet'],
   };
 
 
-  GameCanvas.DEFAULT_WIDTH = 600;
+  GameCanvas.DEFAULT_WIDTH = 400;
   GameCanvas.DEFAULT_HEIGHT = 400;
   GameCanvas.DEFAULT_ID = "MicropolisCanvas";
 

@@ -86,7 +86,7 @@ define(['MouseBox', 'TileSet'],
   };
 
 
-  SplashCanvas.DEFAULT_WIDTH = 360;
+  SplashCanvas.DEFAULT_WIDTH = 350;
   SplashCanvas.DEFAULT_HEIGHT = 300;
   SplashCanvas.DEFAULT_ID = "SplashCanvas";
 

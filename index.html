@@ -22,9 +22,9 @@
   <body>
     <div class="hidden" id="opaque"></div>
     <div id='header'>
-      <h1 id="title">micropolisJS</h1>
+      <h1 id="title"><img src="images/title_logo.png" alt="simcity mars"></h1>
       <div class="links">
-        <a href="about.html">About</a> | <a href="participate.html">Get Involved</a>
+        <a class="link_button" href="about.html">マーズアタックについて</a>   <a  class="link_button" href="participate.html">参加するには</a>
       </div>
     </div>
     <div id="container">
@@ -47,18 +47,18 @@
       </div>
       <div class="splashWidth" id="splashContainer">
          <div id="SplashCanvas">
-           Loading...
-         </div>
+           <span style="font-size:10px; color:#fff;">火星の地図を読み込み中...</b>
+          </div>
           <div class="awaitGeneration" id="splashButtons">
-           <button class="splashButton" id="splashGenerate">Generate new map</button>
-           <button class="splashButton" id="splashPlay">Play this map</button>
+           <button class="splashButton" id="splashGenerate">新しい火星の地図</button>
+           <button class="splashButton" id="splashPlay">この地図でスタート</button>
          </div>
          <fieldset class="awaitGeneration" id="difficulties">
-           <legend>Difficulty</legend>
+           <legend>ゲームの難しさ</legend>
            <label for="difficulty">
-           <input type="radio" name="difficulty" value="0" checked="checked">Easy</input>
-           <input type="radio" name="difficulty" value="1">Medium</input>
-           <input type="radio" name="difficulty" value="2">Hard</input>
+           <input type="radio" name="difficulty" value="0" checked="checked">かんたん</input>&nbsp;&nbsp;
+           <input type="radio" name="difficulty" value="1">ふつう</input>&nbsp;&nbsp;
+           <input type="radio" name="difficulty" value="2">むずかしい</input>
          </fieldset>
       </div>
       <div id="canvasContainer">

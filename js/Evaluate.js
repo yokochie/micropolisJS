@@ -82,7 +82,8 @@ define(['MiscUtils', 'Random'],
 
 
   Evaluation.prototype.getPopulation = function(census) {
-    var population = (census.resPop + (census.comPop + census.indPop) * 8) * 20;
+    //var population = (census.resPop + (census.comPop + census.indPop) * 8) * 20;
+    var population = (census.resPop + (census.comPop + census.indPop));
     return population;
   };
 

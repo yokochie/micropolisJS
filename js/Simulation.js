@@ -34,7 +34,7 @@ define(['BlockMap', 'BlockMapUtils', 'Budget', 'Census', 'Commercial', 'Disaster
     this._cityTime = 50;
     this._cityPopLast = 0;
     this._messageLast = Messages.VILLAGE_REACHED;
-    this._startingYear = 1900;
+    this._startingYear = 2024;
 
     // Last valves updated to the user
     this._resValveLast = 0;
@@ -111,13 +111,15 @@ define(['BlockMap', 'BlockMapUtils', 'Budget', 'Census', 'Commercial', 'Disaster
     if (this.budget.awaitingValues)
       return;
 
-    if (this._speed === 0)
+    this._speedCycle++;
+    if (this._speedCycle >= 15) this._speedCycle = 0;
+    if (this._speed === Simulation.SPEED_PAUSED)
       return;
 
-    if (this._speed === 1 && (this._speedCycle % 5) !== 0)
+    if (this._speed === Simulation.SPEED_SLOW && (this._speedCycle % 5) !== 0)
       return;
 
-    if (this._speed === 2 && (this._speedCycle % 3) !== 0)
+    if (this._speed === Simulation.SPEED_MED && (this._speedCycle % 3) !== 0)
       return;
 
     this._messageManager.clear();

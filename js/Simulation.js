@@ -164,8 +164,8 @@ define(['BlockMap', 'BlockMapUtils', 'Budget', 'Census', 'Commercial', 'Disaster
     Residential.registerHandlers(this._mapScanner, this._repairManager);
     Stadia.registerHandlers(this._mapScanner, this._repairManager);
     Transport.registerHandlers(this._mapScanner, this._repairManager);
-
-    this.budget.setFunds(20000);
+// 3,000,000,000,000
+    this.budget.setFunds(3000000000000);
     var simData = this._constructSimData();
     this.evaluation.evalInit();
     this._valves.setValves(this._gameLevel, this._census, this.budget);

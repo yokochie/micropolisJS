@@ -147,6 +147,9 @@ define(['Messages', 'MiscUtils'],
     this.roadSpend = roadValue;
     this.fireSpend = fireValue;
     this.policeSpend = policeValue;
+//    alert('set tax rate 0%');
+//    this.setTax(taxRate);
+    this.setTax(0);
     this.setTax(taxRate);
     var total = this.roadSpend + this.fireSpend + this.policeSpend;
 
@@ -182,7 +185,7 @@ define(['Messages', 'MiscUtils'],
 
     if (census.totalPop > 0) {
       this.cashFlow = this.taxFund - (this.policeFund + this.fireFund + this.roadFund);
-      this.doBudget(messageManager);
+//      this.doBudget(messageManager);
     } else {
       // We don't want roads etc deteriorating when population hasn't yet been established
       // (particularly early game)

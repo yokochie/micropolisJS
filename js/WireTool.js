@@ -12,7 +12,7 @@ define(['BaseTool', 'Connector', 'Tile', 'TileUtils'],
   "use strict";
 
   function WireTool(map) {
-    this.init(20, map, true, true);
+    this.init(30000000, map, true, true);
   }
 
 

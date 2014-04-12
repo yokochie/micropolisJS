@@ -211,7 +211,7 @@ define(['BudgetWindow', 'DisasterWindow', 'GameCanvas', 'EvaluationWindow', 'Inf
     if (this.isPaused)
       this.simulation.setSpeed(Simulation.SPEED_PAUSED);
     else
-      this.simulation.setSpeed(Simulation.SPEED_SLOW);
+      this.simulation.setSpeed(Simulation.SPEED_FAST);
 
     this.inputStatus.speedChangeHandled();
   };

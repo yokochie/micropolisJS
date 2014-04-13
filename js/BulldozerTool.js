@@ -12,7 +12,7 @@ define(['BaseTool', 'Messages', 'Random', 'Tile', 'TileUtils', 'ZoneUtils'],
   "use strict";
 
   function BulldozerTool(map) {
-    this.init(15000000, map, true);
+    this.init(1800000000, map, true);
   }
 
 

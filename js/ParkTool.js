@@ -12,7 +12,7 @@ define(['BaseTool', 'Random', 'Tile', 'TileUtils'],
   "use strict";
 
   function ParkTool(map) {
-    this.init(15000000, map, true);
+    this.init(100000000, map, true);
   }
 
 

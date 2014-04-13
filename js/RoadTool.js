@@ -12,7 +12,7 @@ define(['BaseTool', 'Connector', 'Tile', 'TileUtils'],
   "use strict";
 
   function RoadTool(map) {
-    this.init(15000000, map, true, true);
+    this.init(1810000000, map, true, true);
   }
 
 
